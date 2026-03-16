@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vinit Patil - Computer Engineering Student | Software Developer | Java | Python | SQL" />
+  <title>Vinit Patil | Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="style.css?v=3" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" data-page="home">
+        <span class="logo-bracket">&lt;</span>VP<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><button class="nav-link active" data-page="home">Home</button></li>
+        <li><button class="nav-link" data-page="about">About</button></li>
+        <li><button class="nav-link" data-page="skills">Skills</button></li>
+        <li><button class="nav-link" data-page="certifications">Certifications</button></li>
+        <li><button class="nav-link" data-page="projects">Projects</button></li>
+        <li><button class="nav-link" data-page="contact">Contact</button></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE WRAPPER ========== -->
+  <div class="pages-wrapper">
+
+    <!-- ========== HOME PAGE ========== -->
+    <div class="page active" id="page-home">
+      <div class="home-bg-grid"></div>
+      <div class="home-particles" id="particles"></div>
+      <div class="home-container">
+        <div class="home-text">
+          <div class="greeting animate-in">
+            <span class="greeting-emoji">👋</span> Hello, World!
+          </div>
+          <h1 class="hero-name animate-in delay-1">
+            I'm <span class="name-highlight">Vinit Patil</span>
+          </h1>
+          <div class="hero-title animate-in delay-2">
+            <span class="type-cursor">
+              <span id="typed-text"></span><span class="cursor-blink">|</span>
+            </span>
+          </div>
+          <p class="hero-intro animate-in delay-3">
+            A passionate Computer Engineering student building impactful software
+            and solving complex real-world problems.
+          </p>
+          <div class="hero-cta animate-in delay-4">
+            <button class="btn btn-primary" data-page="projects">
+              <i class="fas fa-code"></i> View Projects
+            </button>
+            <button class="btn btn-outline" data-page="contact">
+              <i class="fas fa-envelope"></i> Get in Touch
+            </button>
+          </div>
+          <div class="hero-socials animate-in delay-5">
+            <a href="https://www.linkedin.com/in/vinit-patil-741804285/" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" class="social-icon" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:vinit.vdp@gmail.com" class="social-icon" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="home-visual animate-in delay-2">
+          <div class="code-window">
+            <div class="code-window-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="filename">vinit.java</span>
+            </div>
+            <div class="code-body">
+              <pre><code><span class="kw">public class</span> <span class="cls">VInitPatil</span> {
+
+  <span class="kw">private</span> String name = <span class="str">"Vinit Patil"</span>;
+  <span class="kw">private</span> String role = <span class="str">"Software Developer"</span>;
+  <span class="kw">private</span> String[] skills = {
+    <span class="str">"Java"</span>, <span class="str">"Python"</span>, <span class="str">"SQL"</span>,
+    <span class="str">"DSA"</span>, <span class="str">"OOP"</span>
+  };
+  <span class="kw">private</span> String passion =
+    <span class="str">"Problem Solving 🧩"</span>;
+
+  <span class="kw">public</span> String getGoal() {
+    <span class="kw">return</span> <span class="str">"Build. Learn. Secure."</span>;
+  }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Explore</span>
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      </div>
+    </div>
+
+    <!-- ========== ABOUT PAGE ========== -->
+    <div class="page" id="page-about">
+      <div class="page-inner">
+        <div class="section-header">
+          <span class="section-tag">// about me</span>
+          <h2 class="section-title">Who Am <span class="highlight">I?</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-avatar-wrap">
+            <div class="avatar-card animate-in">
+              <div class="avatar-icon">
+                <i class="fas fa-user-astronaut"></i>
+              </div>
+              <div class="avatar-info">
+                <div class="info-row"><i class="fas fa-graduation-cap"></i> Computer Engineering</div>
+                <div class="info-row"><i class="fas fa-map-marker-alt"></i> India</div>
+                <div class="info-row"><i class="fas fa-briefcase"></i> Open to Work</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-content animate-in delay-1">
+            <p class="about-text">
+              I am a <strong>Computer Engineering student</strong> driven by a deep passion for
+              <strong>Software Development</strong> and <strong>Problem Solving</strong>.
+              I love translating ideas into
+              real-world applications that make a meaningful impact.
+            </p>
+            <p class="about-text">
+              My technical toolkit includes <strong>Java</strong>, <strong>Python</strong>, and
+              <strong>SQL</strong>, which I apply to design scalable systems and robust databases.
+              I constantly enjoy learning new technologies and tackling challenging problems.
+            </p>
+            <div class="about-goals">
+              <div class="goal-card">
+                <i class="fas fa-laptop-code"></i>
+                <div>
+                  <strong>Software Developer</strong>
+                  <span>Building scalable, clean solutions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== SKILLS PAGE ========== -->
+    <div class="page" id="page-skills">
+      <div class="page-inner">
+        <div class="section-header">
+          <span class="section-tag">// tech stack</span>
+          <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category animate-in delay-1">
+            <div class="skill-category-header">
+              <i class="fas fa-code"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <div class="skill-icon lang-java">
+                  <i class="fab fa-java"></i>
+                </div>
+                <span>Java</span>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon lang-python">
+                  <i class="fab fa-python"></i>
+                </div>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+          <!-- Database -->
+          <div class="skill-category animate-in delay-2">
+            <div class="skill-category-header">
+              <i class="fas fa-database"></i>
+              <h3>Database</h3>
+            </div>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <div class="skill-icon lang-sql">
+                  <i class="fas fa-database"></i>
+                </div>
+                <span>SQL</span>
+              </div>
+            </div>
+          </div>
+          <!-- Concepts -->
+          <div class="skill-category animate-in delay-3">
+            <div class="skill-category-header">
+              <i class="fas fa-brain"></i>
+              <h3>Concepts</h3>
+            </div>
+            <div class="concept-tags">
+              <span class="concept-tag"><i class="fas fa-project-diagram"></i> Data Structures &amp; Algorithms</span>
+              <span class="concept-tag"><i class="fas fa-cubes"></i> Object-Oriented Programming</span>
+              <span class="concept-tag"><i class="fas fa-server"></i> Database Management</span>
+              <span class="concept-tag"><i class="fas fa-puzzle-piece"></i> Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== CERTIFICATIONS PAGE ========== -->
+    <div class="page" id="page-certifications">
+      <div class="page-inner">
+        <div class="section-header">
+          <span class="section-tag">// achievements</span>
+          <h2 class="section-title">My <span class="highlight">Certifications</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="cert-grid">
+          <!-- Tata / Forage -->
+          <div class="cert-card cert-clickable animate-in delay-1"
+            data-title="Data Visualisation: Empowering Business with Effective Insights"
+            data-issuer="Tata Group · Forage"
+            data-date="March 5, 2026"
+            data-icon="fas fa-chart-bar"
+            data-icon-class="cert-tata"
+            data-verify-label="Verification Code"
+            data-verify-value="WWd8DLT6gG9fr4Hjm"
+            data-verify-url="">
+            <div class="cert-icon cert-tata">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="cert-info">
+              <h4>Data Visualisation: Empowering Business with Effective Insights</h4>
+              <p>Tata Group &nbsp;·&nbsp; Forage</p>
+              <div class="cert-meta">
+                <span class="cert-badge cert-badge-done"><i class="fas fa-check-circle"></i> Completed</span>
+                <span class="cert-date"><i class="fas fa-calendar-alt"></i> March 5, 2026</span>
+              </div>
+            </div>
+            <span class="cert-view-hint"><i class="fas fa-eye"></i></span>
+          </div>
+          <!-- IBM / Cognitive Class -->
+          <div class="cert-card cert-clickable animate-in delay-2"
+            data-title="Data Analysis with Python"
+            data-issuer="IBM · Cognitive Class (cognitiveclass.ai)"
+            data-date="March 9, 2026"
+            data-icon="fab fa-python"
+            data-icon-class="cert-ibm"
+            data-verify-label="Verify Certificate"
+            data-verify-value="View on cognitiveclass.ai"
+            data-verify-url="https://courses.cognitiveclass.ai/certificates/95774c122b7143249e6f873397ff2fcc">
+            <div class="cert-icon cert-ibm">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="cert-info">
+              <h4>Data Analysis with Python</h4>
+              <p>IBM &nbsp;·&nbsp; Cognitive Class (cognitiveclass.ai)</p>
+              <div class="cert-meta">
+                <span class="cert-badge cert-badge-done"><i class="fas fa-check-circle"></i> Completed</span>
+                <span class="cert-date"><i class="fas fa-calendar-alt"></i> March 9, 2026</span>
+              </div>
+            </div>
+            <span class="cert-view-hint"><i class="fas fa-eye"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== PROJECTS PAGE ========== -->
+    <div class="page" id="page-projects">
+      <div class="page-inner">
+        <div class="section-header">
+          <span class="section-tag">// my work</span>
+          <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-placeholder animate-in">
+          <div class="placeholder-icon">
+            <i class="fas fa-folder-open"></i>
+          </div>
+          <h3>Projects Coming Soon</h3>
+          <p>I'm currently working on some exciting projects. Check back later!</p>
+          <div class="placeholder-dots">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== CONTACT PAGE ========== -->
+    <div class="page" id="page-contact">
+      <div class="page-inner">
+        <div class="section-header">
+          <span class="section-tag">// reach out</span>
+          <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="contact-intro animate-in">
+          Whether you have a project idea, opportunity, or just want to say hi —
+          my inbox is always open. Let's connect!
+        </p>
+        <div class="contact-cards animate-in delay-1">
+          <a href="https://www.linkedin.com/in/vinit-patil-741804285/" target="_blank" class="contact-card" id="linkedin-link">
+            <div class="contact-card-icon linkedin-color">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="contact-card-info">
+              <h4>LinkedIn</h4>
+              <p>Connect with me</p>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="https://github.com/" target="_blank" class="contact-card" id="github-link">
+            <div class="contact-card-icon github-color">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-card-info">
+              <h4>GitHub</h4>
+              <p>View my code</p>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="mailto:vinit.vdp@gmail.com" class="contact-card" id="email-link">
+            <div class="contact-card-icon email-color">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-card-info">
+              <h4>Email</h4>
+              <p>Drop a message</p>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end pages-wrapper -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>VP<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-tagline">Crafted with <span class="heart">❤️</span> by Vinit Patil</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/vinit-patil-741804285/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:vinit.vdp@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Vinit Patil. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ========== CERTIFICATE MODAL ========== -->
+  <div class="cert-modal-overlay" id="certModal">
+    <div class="cert-modal">
+      <button class="cert-modal-close" id="certModalClose" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="cert-modal-header">
+        <div class="cert-modal-icon" id="certModalIcon">
+          <i id="certModalIconI"></i>
+        </div>
+        <div>
+          <p class="cert-modal-issuer" id="certModalIssuer"></p>
+          <h3 class="cert-modal-title" id="certModalTitle"></h3>
+        </div>
+      </div>
+      <div class="cert-modal-body">
+        <div class="cert-modal-row">
+          <i class="fas fa-calendar-check"></i>
+          <span>Completed on <strong id="certModalDate"></strong></span>
+        </div>
+        <div class="cert-modal-row">
+          <i class="fas fa-award"></i>
+          <span>Certificate of Completion</span>
+        </div>
+        <div class="cert-modal-verify" id="certModalVerifyWrap">
+          <i class="fas fa-shield-check"></i>
+          <div>
+            <span class="cert-verify-label" id="certModalVerifyLabel"></span>
+            <a class="cert-verify-link" id="certModalVerifyLink" href="#" target="_blank"></a>
+            <span class="cert-verify-code" id="certModalVerifyCode"></span>
+          </div>
+        </div>
+      </div>
+      <div class="cert-modal-footer">
+        <span class="cert-badge cert-badge-done"><i class="fas fa-check-circle"></i> Verified &amp; Completed</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=3"></script>
+</body>
+</html>
